@@ -1,0 +1,240 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main {
+    height: 90%;
+    width: 75%;
+    box-shadow: rgb(38, 57, 77)0px 20px 30px -10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    background-color: black;
+    border: solid black 2px;
+}
+
+
+.left {
+    height: 100%;
+    width: 80%;
+    clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+    background-color: rgb(241, 243, 224);
+    display: flex;
+    transition: all 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+    border-right: solid rgb(7, 6, 6) 2px;
+}
+
+.login_con {
+    margin-top: 30px;
+    /* border: solid  pink 4px; */
+    height: 100%;
+    width: 360px;
+    text-align: center;
+    margin-left: 36px;
+    transition: all 0.7s ease-in-out;
+}
+
+.input_group {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_group label {
+    position: absolute;
+    top: 38px;
+    left: 19px;
+    font-size: 16px;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+}
+
+.input_group input:focus+label,
+.input_group input:not(:placeholder-shown)+label {
+    top: -10px;
+    font-size: 15px;
+    background-image: linear-gradient(120deg,
+            #e30808 0%,
+            #7c90d9 25%,
+            #aaeded 50%,
+            #2d4026 75%,
+            #ff7a7a 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shineText 3s linear infinite;
+
+}
+
+
+
+.input_group input {
+
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+.input_group input:focus {
+    background: linear-gradient(-45deg, #e7c8da, #d0b8e6, #97c6e7);
+
+}
+
+
+.login {
+
+    margin-top: 30px;
+    height: 50px;
+    width: 75%;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #000000, #4d444d);
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(244, 243, 242);
+
+}
+
+.sign_up {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.login:hover {
+
+    /* background: linear-gradient(
+135deg,
+#ff0066 0%,
+#ff00ff 50%,
+#00ffff 100%
+); */
+    transform: translateY(-5px) scale(1.02);
+    transition: all 0.3s ease;
+}
+
+
+.sign_up {
+
+
+    background-image: linear-gradient(90deg,
+            #8d2121 0%,
+            #1339bf 25%,
+            #00ffff 50%,
+            #32af05 75%,
+            #fff 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shineText 3s linear infinite;
+
+
+}
+
+.h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(38, 223, 134);
+    text-shadow: 2px 2px 4px #161515;
+
+
+}
+
+@keyframes shineText {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.right {
+
+    position: absolute;
+    top: 11%;
+    left: 58%;
+    height: 369px;
+    width: 36%;
+    padding-top: 58px;
+    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.set2 h1 {
+    font-size: 3.5rem;
+    margin: 0px;
+    background-image: linear-gradient(135deg,
+            pink,
+            yellowgreen,
+            black,
+            orange,
+            red,
+            yellow,
+            blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: ani 3s linear infinite;
+}
+
+
+.set {
+    width: 77%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.set2 {
+    width: 77%;
+
+}
+
+.set p {
+    background-image: linear-gradient(35deg,
+            rgb(16, 178, 214),
+            rgb(203, 26, 161),
+            rgb(149, 2, 2),
+            rgb(76, 233, 19),
+            rgb(208, 17, 17));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 20% 50%;
+    }
+
+    100% {
+        background-position: 200% 100%;
+    }
+}
